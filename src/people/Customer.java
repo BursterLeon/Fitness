@@ -3,11 +3,13 @@ import utils.*;
 
 public class Customer extends Member {
     public enum Goal {high,medium,low}
-    Goal goal;
+    private Goal goal;
+    private final int activityLevel;
 
     public Goal getGoal() {return goal;}
+    public int getActivityLevel() {return activityLevel;}
 
-    public Customer(String name, int age, String gender, double height, double weight, int id, Goal goal){
+    public Customer(String name, int age, String gender, double height, double weight, int id, Goal goal, int activityLevel) {
         super(name, age, gender, height, weight, id);
 
         if (Utility.isNullOrWhiteSpace(goal.toString()))
@@ -15,6 +17,9 @@ public class Customer extends Member {
         if (!(goal==Goal.low || goal==Goal.medium || goal==Goal.high))
             throw new RuntimeException("Goal must be low or medium or high");
         this.goal = goal;
+        if(!(activityLevel>0 && activityLevel<8))
+            throw new RuntimeException("Activity must be between 1 and 7");
+        this.activityLevel = activityLevel;
     }
 
     public double getBMI() {
