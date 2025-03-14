@@ -120,9 +120,7 @@ public class Main {
                 System.out.println(e.getMessage());
             }
         }
+        scanner.close();
         Customer customer = new Customer(name, age, gender, height, weight, (int) (Math.random() * 100), goal, activityLevel);
-        //Customer greeting
-        //suggest some workout and tell how many calories are burned
-        //Main menu
     }
 }
