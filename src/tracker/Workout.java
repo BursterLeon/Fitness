@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Workout {
     private String name;
     private double duration;
-    private List<Exercise> exercises = new ArrayList();
+    private ArrayList<Exercise> exercises = new ArrayList();
 
     public void startWorkout() {
         
