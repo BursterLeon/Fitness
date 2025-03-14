@@ -6,7 +6,7 @@ public class Exercise {
     private int caloriesBurnedPerMinute;
 
     // Constructor
-    public exercise(String name, String targetMuscleGroup, int caloriesBurnedPerMinute) {
+    public Exercise(String name, String targetMuscleGroup, int caloriesBurnedPerMinute) {
         if (Utility.isNullOrWhiteSpace(name)) {
             throw new IllegalArgumentException("Name cannot be null or whitespace");
 
