@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome, let us set up your account together.");
+        Scanner scanner = new Scanner(System.in);
+        UserInputHandler userInputHandler = new UserInputHandler(scanner);
 
         String name ="";
         int age = 0;
@@ -55,14 +57,22 @@ public class Main {
                 }
 
                 if (numberInput==3) {
-                    System.out.println("Enter your height: ");
-                    if (!scanner.hasNextDouble())
-                        throw new WrongInputException("Height must be an double");
+                    System.out.print("Enter your height: ");
+                    while (true) {
+                        if (!scanner.hasNextDouble()){
+                            System.out.println("Height Must be double, Pleast Try again!");
+                        scanner.nextLine();
+                        continue;
+                    }
                     double input = scanner.nextDouble();
-                    if (input < 0)
-                        throw new NegativeNumberException("Height cannot be negative");
-                    height = input;
                     scanner.nextLine();
+                    if (input < 0) {
+                        System.out.println("Height cannot be negative");
+                        continue;
+                    }
+                    height = input;
+                    break;
+                }
                     numberInput++;
                 }
 
