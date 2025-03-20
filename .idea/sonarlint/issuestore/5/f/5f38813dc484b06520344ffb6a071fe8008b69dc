@@ -1,0 +1,8 @@
+
+w
+java:S1488<"bImmediately return this expression instead of assigning it to the temporary variable "percentage".(ŠòÍ'
+E	java:S106H"+Replace this use of System.out by a logger.(Ëüˆùÿÿÿÿ
+@	java:S106I"+Replace this use of System.out by a logger.(Ö±ˆµ
+E	java:S106J"+Replace this use of System.out by a logger.(»îí²úÿÿÿÿ
+E	java:S106K"+Replace this use of System.out by a logger.(ëõ¼Ëûÿÿÿÿ
+E	java:S106L"+Replace this use of System.out by a logger.(ì‰çÃúÿÿÿÿ

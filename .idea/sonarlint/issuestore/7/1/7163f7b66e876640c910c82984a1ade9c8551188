@@ -1,0 +1,29 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(çø­Íùÿÿÿÿ8‹­¬Û2
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(°Ä«Şüÿÿÿÿ8‹­¬Û2
+b	java:S112N"FDefine and throw a dedicated exception instead of using a generic one.(“Ö”À8­¬Û2
+g	java:S112R"FDefine and throw a dedicated exception instead of using a generic one.(æ†â¯úÿÿÿÿ8­¬Û2
+h	java:S112¬"FDefine and throw a dedicated exception instead of using a generic one.(´ÔÌªùÿÿÿÿ8Áì¬Û2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8“­¬Û2
+G	java:S106"+Replace this use of System.out by a logger.(…¹Â8Ï ­¬Û2
+L	java:S106 "+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Õ ­¬Û2
+L	java:S106)"+Replace this use of System.out by a logger.(óãÑ©şÿÿÿÿ8Ö ­¬Û2
+G	java:S1063"+Replace this use of System.out by a logger.(†Ñ˜²8× ­¬Û2
+L	java:S106="+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Ø ­¬Û2
+G	java:S106H"+Replace this use of System.out by a logger.(Ï¯£¤8Ù ­¬Û2
+L	java:S106V"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Ú ­¬Û2
+o
+java:S3776\"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ïË–ë8Û ­¬Û2
+G	java:S106_"+Replace this use of System.out by a logger.(µ¢ï…8Ü ­¬Û2
+M	java:S106‹"+Replace this use of System.out by a logger.(¶ç…ùÿÿÿÿ8â ­¬Û2
+M	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ã ­¬Û2
+M	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8å ­¬Û2
+H	java:S106©"+Replace this use of System.out by a logger.(¶Ø¥8æ ­¬Û2
+M	java:S106±"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8æ ­¬Û2
+H	java:S106º"+Replace this use of System.out by a logger.(²„ÿ¢8è ­¬Û2
+M	java:S106Î"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8é ­¬Û2
+p	java:S100Ô"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Àì–ùÿÿÿÿ8é ­¬Û2
+H	java:S106×"+Replace this use of System.out by a logger.(ÎÖÒä8ê ­¬Û2
+M	java:S106ß"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ë ­¬Û2
+Y
+java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(İ§18±šä¬Û2
