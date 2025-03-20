@@ -1,5 +1,7 @@
 package mainPackage;
 
+import exceptions.*;
+import people.Customer;
 import utils.Utility;
 
 import java.util.Scanner;
@@ -34,7 +36,7 @@ public class UserInputHandler {
     }
 
     // Function For handling the correct input for User's Age
-    public int getValidInt() {
+    private int getValidInt() {
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input! Please enter a valid Integer ");
             scanner.next();
@@ -83,6 +85,7 @@ public class UserInputHandler {
         }
     }
 
+    // Handling the users input for Height
     public double getHeight() {
         while (true) {
             try {
@@ -137,5 +140,85 @@ public class UserInputHandler {
         }
     }
 
+    // Function to handle valid input for double weight
 
+    private double getValidDouble() {
+        while (true) {
+            try {
+                if (!scanner.hasNextDouble()) {
+                    throw new WrongInputException("Input Must be double");
+                }
+                double value = scanner.nextDouble();
+                scanner.nextLine();
+                return value;
+            } catch (WrongInputException e) {
+                System.out.println(e.getMessage());
+                scanner.nextLine();
+
+
+            }
+        }
+    }
+
+    public double getWeight() {
+        while (true) {
+            try {
+                System.out.print("Please enter your weight (eg. 143.4");
+                double weight = getValidDouble();
+                if (weight < 0) {
+                    throw new NegativeNumberException("Weight cannot be negative");
+                }
+                return weight;
+
+            } catch (NegativeNumberException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
+    // Function for the Goal
+    public Customer.Goal getGoal() {
+        while (true) {
+            try {
+                System.out.println("What's your goal? \n 1.Lose Weight \n 2.Gain Muscle \n 3. Maintain Fitness");
+                String goal = scanner.nextLine().trim();
+                if (Utility.isNullOrWhiteSpace(goal)) {
+                    throw new NullWhiteSpaceException("The goal cannot be blank");
+
+                }
+
+                switch (goal) {
+                    case "Lose Weight":
+                        return Customer.Goal.looseWeight;
+                    case "Gain Muscle":
+                        return Customer.Goal.gainMuscles;
+                    case "Maintain Fitness":
+                        return Customer.Goal.stayHealthy;
+                    default:
+                        throw new InvalidGoalException("Invalid Goal");
+                }
+
+
+            } catch (NullWhiteSpaceException | InvalidGoalException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
+    // Function for the Activity Level
+    public int GetActivityLevel(){
+        while(true){
+            try{
+                System.out.print("Enter your Activity Level From (1-7): ");
+                int activityLevel = getValidInt();
+                if (activityLevel < 1 || activityLevel > 7 ){
+                    throw new InvalidActivityLevelException("Invalid Activity Level. The activity Level should be between (1 -7) ");
+                }
+                return activityLevel;
+
+            }catch(InvalidActivityLevelException e){
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }

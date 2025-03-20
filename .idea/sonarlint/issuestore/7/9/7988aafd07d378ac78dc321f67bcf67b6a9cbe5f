@@ -1,0 +1,63 @@
+
+g	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(­üÿíøÿÿÿÿ8“ïÇ¦Û2
+a	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8•ïÇ¦Û2
+g	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(Æı§üÿÿÿÿ8•ïÇ¦Û2
+z	java:S135="YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8 ïÇ¦Û2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8¤ïÇ¦Û2
+o
+java:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 79 to the 15 allowed.(Çµí‘8»ïÇ¦Û2
+f
+java:S1854"DRemove this useless assignment to local variable "userInputHandler".(ã¶®üÿÿÿÿ8¿ïÇ¦Û2
+Y
+java:S1854½"<Remove this useless assignment to local variable "customer".(±Ê‰8ÀïÇ¦Û2
+L	java:S106"+Replace this use of System.out by a logger.(Å¯Ÿıÿÿÿÿ8ÂïÇ¦Û2
+W
+java:S1481"5Remove this unused "userInputHandler" local variable.(ã¶®üÿÿÿÿ8ÈïÇ¦Û2
+g
+java:S2147z"ECombine this catch with the one at line 120, which has the same body.(²Ø¤àùÿÿÿÿ8ËïÇ¦Û2
+g
+java:S2147|"ECombine this catch with the one at line 122, which has the same body.(ˆÄ‰Êúÿÿÿÿ8ËïÇ¦Û2
+g
+java:S2147~"ECombine this catch with the one at line 124, which has the same body.( ²¬éıÿÿÿÿ8ÌïÇ¦Û2
+h
+java:S2147€"ECombine this catch with the one at line 126, which has the same body.(¥Ìšˆûÿÿÿÿ8ÌïÇ¦Û2
+c
+java:S2147‚"ECombine this catch with the one at line 128, which has the same body.(”ı¾8ÍïÇ¦Û2
+G	java:S106"+Replace this use of System.out by a logger.(¢¾Á8ÎïÇ¦Û2
+G	java:S106%"+Replace this use of System.out by a logger.(†Ñ˜²8ÑïÇ¦Û2
+F	java:S1061"+Replace this use of System.out by a logger.(€­*8ÓïÇ¦Û2
+L	java:S106<"+Replace this use of System.out by a logger.(ÊëÌÌÿÿÿÿÿ8ÔïÇ¦Û2
+L	java:S106?"+Replace this use of System.out by a logger.(í¬îşÿÿÿÿ8ÕïÇ¦Û2
+L	java:S106F"+Replace this use of System.out by a logger.(Ğ´äÕûÿÿÿÿ8ÖïÇ¦Û2
+L	java:S106P"+Replace this use of System.out by a logger.(äš¢ºúÿÿÿÿ8ÖïÇ¦Û2
+G	java:S106\"+Replace this use of System.out by a logger.(üöÄ8ØïÇ¦Û2
+G	java:S106n"+Replace this use of System.out by a logger.(¬İ…Ò8ÚïÇ¦Û2
+L	java:S106y"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ÜïÇ¦Û2
+L	java:S106{"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8İïÇ¦Û2
+L	java:S106}"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ŞïÇ¦Û2
+L	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ßïÇ¦Û2
+M	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8àïÇ¦Û2
+M	java:S106ƒ"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8áïÇ¦Û2
+H	java:S106Š"+Replace this use of System.out by a logger.(Ãµ±²8áïÇ¦Û2
+M	java:S106‹"+Replace this use of System.out by a logger.(™Òí·ıÿÿÿÿ8áïÇ¦Û2
+G	java:S106”"+Replace this use of System.out by a logger.(Ü¾Ä}8ãïÇ¦Û2
+H	java:S106•"+Replace this use of System.out by a logger.(é×Ã8ãïÇ¦Û2
+H	java:S106–"+Replace this use of System.out by a logger.(¸í¿’8ãïÇ¦Û2
+M	java:S106—"+Replace this use of System.out by a logger.(”Óæúÿÿÿÿ8äïÇ¦Û2
+H	java:S106˜"+Replace this use of System.out by a logger.(ùçŞ°8äïÇ¦Û2
+H	java:S106™"+Replace this use of System.out by a logger.(š”¹Ï8äïÇ¦Û2
+M	java:S106 "+Replace this use of System.out by a logger.(ÆË¥±øÿÿÿÿ8åïÇ¦Û2
+M	java:S106£"+Replace this use of System.out by a logger.(—Ï¥ıÿÿÿÿ8æïÇ¦Û2
+H	java:S106¦"+Replace this use of System.out by a logger.(ÀÜäÂ8çïÇ¦Û2
+H	java:S106©"+Replace this use of System.out by a logger.(¬‘Ñ¾8ëïÇ¦Û2
+M	java:S106°"+Replace this use of System.out by a logger.(†´Õ»øÿÿÿÿ8ìïÇ¦Û2
+H	java:S106³"+Replace this use of System.out by a logger.( –æ‚8ìïÇ¦Û2
+M	java:S106·"+Replace this use of System.out by a logger.(ÊôÍíşÿÿÿÿ8ìïÇ¦Û2
+F
+java:S2140½")Use "java.util.Random.nextInt()" instead.(±Ê‰8íïÇ¦Û2
+J
+java:S1481½"-Remove this unused "customer" local variable.(±Ê‰8îïÇ¦Û2
+ä
+java:S6541
+"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 162 to 64, Complexity from 33 to 14, Nesting Level from 5 to 2, Number of Variables from 32 to 6.(Çµí‘8ïïÇ¦Û2
