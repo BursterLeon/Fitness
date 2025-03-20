@@ -70,8 +70,11 @@ public class UserInputHandler {
         while (true) {
             try {
                 System.out.print("Enter your Gender (Male/Female): ");
+                scanner.nextLine();
                 String gender = scanner.nextLine().trim();
-                if (Utility.isNullOrWhiteSpace(gender)) {
+
+
+                if (gender.isEmpty()) {
                     throw new Exception("Gender Cannot be empty!");
                 }
                 // Constraining Gender to Male or Female
@@ -163,14 +166,14 @@ public class UserInputHandler {
     public double getWeight() {
         while (true) {
             try {
-                System.out.print("Please enter your weight (eg. 143.4");
+                System.out.print("Please enter your weight in KG (eg. 143.4 ) : ");
                 double weight = getValidDouble();
-                if (weight < 0) {
-                    throw new NegativeNumberException("Weight cannot be negative");
+                if (weight < 0 || weight > 150 ) {
+                    throw new Exception("Invalid input!! ");
                 }
                 return weight;
 
-            } catch (NegativeNumberException e) {
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
@@ -180,7 +183,7 @@ public class UserInputHandler {
     public Customer.Goal getGoal() {
         while (true) {
             try {
-                System.out.println("What's your goal? \n 1.Lose Weight \n 2.Gain Muscle \n 3. Maintain Fitness");
+                System.out.println("What's your goal? \n 1.Lose Weight \n 2.Gain Muscle \n 3.Maintain Fitness");
                 String goal = scanner.nextLine().trim();
                 if (Utility.isNullOrWhiteSpace(goal)) {
                     throw new NullWhiteSpaceException("The goal cannot be blank");
