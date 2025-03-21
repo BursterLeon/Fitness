@@ -1,7 +1,0 @@
-package interfaces;
-
-interface Trackable {
-    void logProgress();
-    double getHistory();
-    void setGoal();
-}

@@ -1,23 +1,0 @@
-
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8«€ç«Û2
-X
-java:S1854#"<Remove this useless assignment to local variable "customer".(±Ê‰8±€ç«Û2
-L	java:S106"+Replace this use of System.out by a logger.(Å¯Ÿýÿÿÿÿ8·€ç«Û2
-G	java:S106"+Replace this use of System.out by a logger.(áË¥ú8ÙÍè«Û2
-L	java:S106"+Replace this use of System.out by a logger.(ë÷‹Ûÿÿÿÿÿ8œÙé«Û2
-G	java:S106"+Replace this use of System.out by a logger.(°â³Ñ8½Ãê«Û2
-L	java:S106"+Replace this use of System.out by a logger.(¦¨Ô¼ûÿÿÿÿ8¾Ãê«Û2
-L	java:S106"+Replace this use of System.out by a logger.(«Óæ„úÿÿÿÿ8¾Ãê«Û2
-L	java:S106"+Replace this use of System.out by a logger.(Þö…©ÿÿÿÿÿ8¿Ãê«Û2
-F	java:S106"+Replace this use of System.out by a logger.(…—ì48¿Ãê«Û2
-G	java:S106"+Replace this use of System.out by a logger.(ÇÍÜ»8¿Ãê«Û2
-E
-java:S2140#")Use "java.util.Random.nextInt()" instead.(±Ê‰8¾€ç«Û2
-I
-java:S1481#"-Remove this unused "customer" local variable.(±Ê‰8¾€ç«Û2
-P
-java:S1128"3Remove this unused import 'tracker.CalorieTracker'.(±ÄÙ›8î¦‚¬Û2
-?
-java:S1128""Remove this unused import 'utils'.(ë½ïÖ8î¦‚¬Û2
-C
-java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8î¦‚¬Û2
