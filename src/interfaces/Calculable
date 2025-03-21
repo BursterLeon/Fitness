@@ -1,6 +1,6 @@
 package interfaces;
 
-interface Calculable {
+public interface Calculable {
     int calculate();
     double getResult();
 }

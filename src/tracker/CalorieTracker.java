@@ -5,7 +5,7 @@ public class CalorieTracker {
     private int caloriesConsumed;
     private int caloriesExpended;
 
-    // Create constructi
+    // Create constructor
     public CalorieTracker(int dailyCalorieGoal) {
         this.dailyCalorieGoal = dailyCalorieGoal;
         this.caloriesConsumed = 0;
@@ -27,7 +27,7 @@ public class CalorieTracker {
     //Setter
     public void setDailyCalorieGoal(int dailyCalorieGoal) {
         if (dailyCalorieGoal < 0) {
-            throw new IllegalArgumentException("Error, You calories can no negaticce please try again.");
+            throw new IllegalArgumentException("Error, You calories can not be negative please try again.");
         }
         this.dailyCalorieGoal = dailyCalorieGoal;
     }

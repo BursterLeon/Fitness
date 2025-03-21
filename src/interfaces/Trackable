@@ -1,6 +1,6 @@
 package interfaces;
 
-interface Trackable {
+public interface Trackable {
     void logProgress();
     double getHistory();
     void setGoal();
