@@ -6,10 +6,10 @@ public class CalorieTracker {
     private int caloriesExpended;
 
     // Create constructi
-    public CalorieTracker(int dailyCalorieGoal) {
+    public CalorieTracker(int dailyCalorieGoal, int caloriesConsumed, int caloriesExpended) {
         this.dailyCalorieGoal = dailyCalorieGoal;
-        this.caloriesConsumed = 0;
-        this.caloriesExpended = 0;
+        this.caloriesConsumed = caloriesConsumed;
+        this.caloriesExpended = caloriesExpended;
     }
     public int getDailyCalorieGoal() {
         return dailyCalorieGoal;
