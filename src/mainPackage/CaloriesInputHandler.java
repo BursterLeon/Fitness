@@ -6,17 +6,34 @@ import utils.Utility;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class CaloriesInputHandler {
-    private Scanner scanner;
+public class CaloriesInputHandler extends InputHandler {
     public CaloriesInputHandler() {
-        scanner = new Scanner(System.in);
+        super();
     }
-    public int readCalories() {
-        System.out.println("Enter Calories: ");
-        while (!scanner.hasNextInt()) {
-            System.out.println("Invalid input! Please enter a valid Integer ");
-            scanner.next();
+    public int readCaloriesInput() {
+        while (true) {
+            try {
+                System.out.println("Please enter the calories, you are consuming per day?");
+                int caloriesInput = getValidInt();
+                if (caloriesInput < 1)
+                    throw new IllegalArgumentException("The calories must be greater than 0");
+                return caloriesInput;
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
         }
-        return scanner.nextInt();
+    }
+    public int readCaloriesOutput() {
+        while (true) {
+            try {
+                System.out.println("Please enter the calories, you are burning per day?");
+                int caloriesOutput = getValidInt();
+                if (caloriesOutput < 1)
+                    throw new IllegalArgumentException("The calories must be greater than 0");
+                return caloriesOutput;
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
 }

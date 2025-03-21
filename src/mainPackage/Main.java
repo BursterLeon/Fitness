@@ -30,6 +30,11 @@ public class Main {
         System.out.println("Goal: "+ goal);
         System.out.println("AcitivityLevel "+ activityLevel);
 
+        CaloriesInputHandler caloriesInputHandler = new CaloriesInputHandler();
+
+        int caloriesConsumed = caloriesInputHandler.readCaloriesInput();
+        int caloriesExpended = caloriesInputHandler.readCaloriesOutput();
+        CalorieTracker calorieTracker = new CalorieTracker(0,caloriesConsumed, caloriesExpended);
 
         // //////////////////
         scanner.close();
