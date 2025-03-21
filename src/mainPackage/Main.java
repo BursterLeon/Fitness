@@ -1,5 +1,6 @@
 package mainPackage;
 import people.Customer;
+import people.Trainer;
 import tracker.CalorieTracker;
 import utils.*;
 import exceptions.*;
