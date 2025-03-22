@@ -5,16 +5,15 @@ public class CalorieTracker {
     private int caloriesConsumed;
     private int caloriesExpended;
 
-    // Create constructi
-    public CalorieTracker(int dailyCalorieGoal, int caloriesConsumed, int caloriesExpended) {
+    // Create construction in this Construction get the update for the the calories need to burn per dat
+    public CalorieTracker(int dailyCalorieGoal) {
         this.dailyCalorieGoal = dailyCalorieGoal;
-        this.caloriesConsumed = caloriesConsumed;
-        this.caloriesExpended = caloriesExpended;
+        this.caloriesConsumed = 0;
+        this.caloriesExpended = 0;
     }
     public int getDailyCalorieGoal() {
         return dailyCalorieGoal;
-    }//Get
-
+    }
     public int getCaloriesConsumed() {
         return caloriesConsumed;
     }

@@ -2,6 +2,7 @@ package mainPackage;
 
 import exceptions.*;
 import people.Customer;
+import people.Member;
 import utils.Utility;
 
 import java.util.Scanner;
@@ -50,6 +51,8 @@ public class UserInputHandler {
             try {
                 System.out.print("Enter your age: ");
                 int age = getValidInt();
+                scanner.nextLine();
+
                 if (age < 0) {
                     throw new IllegalArgumentException("Age Cannot be negative");
                 }
@@ -70,7 +73,6 @@ public class UserInputHandler {
         while (true) {
             try {
                 System.out.print("Enter your Gender (Male/Female): ");
-                scanner.nextLine();
                 String gender = scanner.nextLine().trim();
 
 
@@ -145,7 +147,7 @@ public class UserInputHandler {
 
     // Function to handle valid input for double weight
 
-    private double getValidDouble() {
+    public double getValidDouble() {
         while (true) {
             try {
                 if (!scanner.hasNextDouble()) {
@@ -179,36 +181,6 @@ public class UserInputHandler {
         }
     }
 
-    // Function for the Goal
-    public Customer.Goal getGoal() {
-        while (true) {
-            try {
-                System.out.println("What's your goal? \n 1.Lose Weight \n 2.Gain Muscle \n 3.Maintain Fitness");
-                String goal = scanner.nextLine().trim();
-                if (Utility.isNullOrWhiteSpace(goal)) {
-                    throw new NullWhiteSpaceException("The goal cannot be blank");
-
-                }
-
-                switch (goal) {
-                    case "Lose Weight":
-                        return Customer.Goal.looseWeight;
-                    case "Gain Muscle":
-                        return Customer.Goal.gainMuscles;
-                    case "Maintain Fitness":
-                        return Customer.Goal.stayHealthy;
-                    default:
-                        throw new InvalidGoalException("Invalid Goal");
-                }
-
-
-            } catch (NullWhiteSpaceException | InvalidGoalException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-    }
-
-    // Function for the Activity Level
     public int GetActivityLevel(){
         while(true){
             try{
@@ -224,4 +196,36 @@ public class UserInputHandler {
             }
         }
     }
+    // Get inputs
+
+    // Function for the Goal
+    public Customer.Goal getGoal() {
+        while (true) {
+            try {
+                System.out.println("What's your goal? \n 1.Lose Weight \n 2.Gain Muscle \n 3.Maintain Fitness");
+                String goalInput = scanner.nextLine().trim();
+                if (Utility.isNullOrWhiteSpace(goalInput)) {
+                    throw new NullWhiteSpaceException("The goal cannot be blank");
+                }
+                switch (goalInput) {
+                    case "1":
+                        return Customer.Goal.looseWeight;
+                    case "2":
+                        return Customer.Goal.gainMuscles;
+
+                    case "3":
+                        return Customer.Goal.stayHealthy;
+                    default:
+                        throw new InvalidGoalException("Invalid Goal");
+                }
+
+
+            } catch (NullWhiteSpaceException | InvalidGoalException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
+    // Function for the Activity Level
+
 }
