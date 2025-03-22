@@ -12,6 +12,7 @@ public class Customer extends Member {
 
     public Customer(String name, int age, String gender, double height, double weight, int id, Goal goal, int activityLevel) {
         super(name, age, gender, height, weight, id);
+        customerCount++;
         if (customerCount>100)
             throw new RuntimeException("Customer count exceeds 100");
         if (Utility.isNullOrWhiteSpace(goal.toString()))
@@ -22,7 +23,6 @@ public class Customer extends Member {
         if(!(activityLevel>0 && activityLevel<8))
             throw new RuntimeException("Activity must be between 1 and 7");
         this.activityLevel = activityLevel;
-        customerCount++;
     }
 
     public double getBMI() {
