@@ -29,8 +29,6 @@ public class Customer extends Member {
         return getWeight()/(getHeight()*getHeight());
     }
     public void updateGoal (Goal newGoal) {
-        if (customerCount>100)
-            throw new RuntimeException("Customer count exceeded 100");
         if (newGoal == this.goal)
             throw new RuntimeException("Goal is already set to " + this.goal);
         if (Utility.isNullOrWhiteSpace(newGoal.toString()))
@@ -38,7 +36,6 @@ public class Customer extends Member {
         if (!(newGoal==Goal.looseWeight || newGoal==Goal.gainMuscles || newGoal==Goal.stayHealthy))
             throw new RuntimeException("Goal must be low or medium or high");
         this.goal = newGoal;
-        customerCount++;
     }
 
     //needs to be implemented
