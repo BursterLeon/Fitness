@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 //Input calories
 public class CaloriesInputHandler extends InputHandler {
+
     public CaloriesInputHandler() {
         super();
     }
@@ -21,13 +22,19 @@ public class CaloriesInputHandler extends InputHandler {
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
+
         }
+
     }
+
+
     public int readCaloriesOutput() {
         while (true) {
             try {
                 System.out.println("Please enter the calories, you are burning per day?");
                 int caloriesOutput = getValidInt();
+
+
                 if (caloriesOutput < 1)
                     throw new IllegalArgumentException("The calories must be greater than 0");
                 return caloriesOutput;
@@ -40,7 +47,7 @@ public class CaloriesInputHandler extends InputHandler {
 
         public void promptCaloriesOption() {
             while (true) {
-                System.out.println("\n📊 What would you like to enter?");
+                System.out.println(" What would you like to enter?");
                 System.out.println("1. Enter calories consumed (IN)");
                 System.out.println("2. Enter calories burned (OUT)");
                 System.out.println("3. Exit");

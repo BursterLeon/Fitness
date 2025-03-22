@@ -22,6 +22,7 @@ public class Main {
         int activityLevel = userInputHandler.GetActivityLevel();
         scanner.nextLine();
         int id = (int) (Math.random() * 1000);
+        System.out.println("======Create Account Sucess ====== ");
         System.out.println("User Information: ");
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
@@ -29,7 +30,7 @@ public class Main {
         System.out.println("Height: " + height);
         System.out.println("Weight: " + weight);
         System.out.println("AcitivityLevel " + activityLevel);
-        System.out.println("======Create Account Sucess ====== ");
+        System.out.println("================================= ");
 
 
 
@@ -53,9 +54,9 @@ public class Main {
         Customer m = new Customer(name, age, gender, height, weight, id, goal, activityLevel);
         if (goal ==Customer.Goal.looseWeight){
             m.setWeightLoss(weightGoal);
-            System.out.println ("=======================")
-            System.out.println("To reach your goal you have to burn about** " + m.getDayLoss()+ " **Calories per week");
+            System.out.println ("=======================");
 
+            System.out.println("To reach your goal you have to burn about** " + m.getDayLoss()+ " Calories ** per week");
         }
 
         // int caloriesRecommend=;
@@ -63,20 +64,35 @@ public class Main {
 
 
         CaloriesInputHandler caloriesInputHandler = new CaloriesInputHandler();
+        int dailyCalorieGoal = (int) (m.getDayLoss());
         // Get Customer Chose option to work
-        System.out.println("Welcome what you want to start today?? \n 1.Track your Calories \n 2.Workout \n 3.Exits");
+
+
+
+        //===========================Track or Exercíe============================================
+
+        CalorieTracker calorieTracker = new CalorieTracker(dailyCalorieGoal, 0, 0);
+
+        while (true){
+        System.out.println(" /n1.Track your Calories \n 2.Workout \n 3.Exits");
         String goalInput = scanner.nextLine().trim();
         switch (goalInput) {
             case "1":
                 int caloriesConsumed = caloriesInputHandler.readCaloriesInput();
-                break;
-
-
-            case "2":
                 int caloriesExpended = caloriesInputHandler.readCaloriesOutput();
+                calorieTracker.addCaloriesConsumed(caloriesConsumed);
+                calorieTracker.addCaloriesExpended(caloriesExpended);
+                int remainingCalories = calorieTracker.getRemainingCalories();
+                System.out.println("To reach your goal, you have to burn ** " + remainingCalories + " Calories ** today.");
+                calorieTracker.displayCalorieSummary();
+
                 break;
+            case "2":
 
             case "3":
+                System.out.println("Exiting calorie tracker...");
+                scanner.close();
+                break;
 
             default:
 
@@ -86,6 +102,6 @@ public class Main {
         //CalorieTracker calorieTracker = new CalorieTracker();
 
         // //////////////////
-        scanner.close();
+    }
     }
 }
