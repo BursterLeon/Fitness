@@ -26,4 +26,8 @@ public abstract class Member {
         this.weight = weight;
         this.id = id;
     }
+    @Override
+    public String toString() {
+        return "Name: "+getName()+"Age: "+getAge()+"Gender: "+getGender()+"Height: "+getHeight()+"Weight: "+getWeight();
+    }
 }
