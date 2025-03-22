@@ -41,8 +41,7 @@ public class Trainer extends Member implements comparableTrainer {
         ratingList = new ArrayList<Integer>();
         this.customerList = new ArrayList<Customer>();
     }
-
-    public void explainExercise (Customer customer) {}
+    //method could recommend specific food/nutrition, based on the customer and their goal
     public void createDietPlan (Customer customer) {}
     public void startWorkout (List<Customer> customerList) {}
 
@@ -69,5 +68,9 @@ public class Trainer extends Member implements comparableTrainer {
     @Override
     public String getContactInfo() {
         return getName()+" "+getId();
+    }
+    @Override
+    public String toString() {
+        return super.toString()+" Specialization: "+specialization+" Experience Years: "+experienceYears+" AverageRating: "+getAverageRating();
     }
 }

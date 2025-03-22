@@ -39,4 +39,8 @@ public class Customer extends Member {
     public double getCaloriesRequired () {
         return 0;
     }
+    @Override
+    public String toString() {
+        return super.toString()+" Goal: "+getGoal()+" ActivityLevel: "+getActivityLevel();
+    }
 }
