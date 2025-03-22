@@ -53,7 +53,8 @@ public class Main {
         Customer m = new Customer(name, age, gender, height, weight, id, goal, activityLevel);
         if (goal ==Customer.Goal.looseWeight){
             m.setWeightLoss(weightGoal);
-            System.out.println("To reach your goal you have to burn about " + m.getDayLoss()+ "Calories per week");
+            System.out.println ("=======================")
+            System.out.println("To reach your goal you have to burn about** " + m.getDayLoss()+ " **Calories per week");
 
         }
 
