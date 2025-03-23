@@ -1,15 +1,20 @@
 package mainPackage;
-import people.Customer;
 
-import people.Trainer;
-import tracker.CalorieTracker;
+import people.*;
+import interfaces.*;
+import tracker.*;
 import utils.*;
 import exceptions.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Trainer Marc = new Trainer("Marc",28,"Male",180,70,85, "Cardio/looseWeight",3);
+        Trainer Melissa = new Trainer("Melissa",24,"Female",165,60,90, "Strength/GainMuscles",2);
+        Trainer Olivia = new Trainer("Olivia",34,"Female",170,60,95, "Yoga/HealthyLifestyle",8);
+
         System.out.println("Hello and welcome, let us set up your account together.");
         Scanner scanner = new Scanner(System.in);
         UserInputHandler userInputHandler = new UserInputHandler(scanner);
@@ -74,34 +79,40 @@ public class Main {
         CalorieTracker calorieTracker = new CalorieTracker(dailyCalorieGoal, 0, 0);
 
         while (true){
-        System.out.println(" /n1.Track your Calories \n 2.Workout \n 3.Exits");
-        String goalInput = scanner.nextLine().trim();
-        switch (goalInput) {
-            case "1":
-                int caloriesConsumed = caloriesInputHandler.readCaloriesInput();
-                int caloriesExpended = caloriesInputHandler.readCaloriesOutput();
-                calorieTracker.addCaloriesConsumed(caloriesConsumed);
-                calorieTracker.addCaloriesExpended(caloriesExpended);
-                int remainingCalories = calorieTracker.getRemainingCalories();
-                System.out.println("To reach your goal, you have to burn ** " + remainingCalories + " Calories ** today.");
-                calorieTracker.displayCalorieSummary();
+            System.out.println("1.Track your Calories \n 2.Workout \n 3.Exits");
+            String goalInput = scanner.nextLine().trim();
+            switch (goalInput) {
+                case "1":
+                    int caloriesConsumed = caloriesInputHandler.readCaloriesInput();
+                    int caloriesExpended = caloriesInputHandler.readCaloriesOutput();
+                    calorieTracker.addCaloriesConsumed(caloriesConsumed);
+                    calorieTracker.addCaloriesExpended(caloriesExpended);
+                    int remainingCalories = calorieTracker.getRemainingCalories();
+                    System.out.println("To reach your goal, you have to burn ** " + remainingCalories + " Calories ** today.");
+                    calorieTracker.displayCalorieSummary();
 
-                break;
-            case "2":
+                    break;
+                case "2":
+                    //Aydan's part
+                    String exerciseName = ".";
+                    String targetMuscleGroup = ".";
+                    double caloriesBurnedPerMinute = 0;
+                    ArrayList<Exercise> exercises = new ArrayList<> ();
 
-            case "3":
-                System.out.println("Exiting calorie tracker...");
-                scanner.close();
-                break;
+                    Exercise exercise = new Exercise(exerciseName, targetMuscleGroup, caloriesBurnedPerMinute);
+                    Workout workout = new Workout (exerciseName,targetMuscleGroup,caloriesBurnedPerMinute,exercises);
+                    workout.startWorkout();
+                    break;
 
-            default:
+                case "3":
+                    System.out.println("Exiting calorie tracker...");
+                    scanner.close();
+                    break;
+
+                default:
+
+            }
 
         }
-
-
-        //CalorieTracker calorieTracker = new CalorieTracker();
-
-        // //////////////////
-    }
     }
 }
