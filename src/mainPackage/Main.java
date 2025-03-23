@@ -1,11 +1,12 @@
 package mainPackage;
-import people.Customer;
 
-import people.Trainer;
-import tracker.CalorieTracker;
+import people.*;
+import interfaces.*;
+import tracker.*;
 import utils.*;
 import exceptions.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -102,6 +103,15 @@ public class Main {
         //CalorieTracker calorieTracker = new CalorieTracker();
 
         // //////////////////
+
+        //Aydan's part
+        String exerciseName = ".";
+        String targetMuscleGroup = ".";
+        double caloriesBurnedPerMinute = 0;
+        ArrayList<Exercise> exercises = new ArrayList<> ();
+
+        Exercise exercise = new Exercise(exerciseName, targetMuscleGroup, caloriesBurnedPerMinute);
+        Workout workout = new Workout (exerciseName,targetMuscleGroup,caloriesBurnedPerMinute,exercises);
     }
     }
 }
