@@ -11,6 +11,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Trainer Marc = new Trainer("Marc",28,"Male",180,70,85, "Cardio/looseWeight",3);
+        Trainer Melissa = new Trainer("Melissa",24,"Female",165,60,90, "Strength/GainMuscles",2);
+        Trainer Olivia = new Trainer("Olivia",34,"Female",170,60,95, "Yoga/HealthyLifestyle",8);
+
         System.out.println("Hello and welcome, let us set up your account together.");
         Scanner scanner = new Scanner(System.in);
         UserInputHandler userInputHandler = new UserInputHandler(scanner);
