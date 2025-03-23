@@ -10,10 +10,13 @@ public class Trainer extends Member implements comparableTrainer {
     private int experienceYears;
     private List<Integer> ratingList;
     private List<Customer> customerList;
+    private static int count = 0;
 
     public Trainer (String name, int age, String gender, double height, double weight, int id, String specialization, int experienceYears,List<Customer> customerList) {
         super(name, age, gender, height, weight, id);
-
+        count++;
+        if (count > 100)
+            throw new RuntimeException("More than 100 trainers are not supported");
         if (Utility.isNullOrWhiteSpace(specialization))
             throw new IllegalArgumentException();
         if (experienceYears < 0 || experienceYears > 100)
@@ -30,7 +33,9 @@ public class Trainer extends Member implements comparableTrainer {
 
     public Trainer (String name, int age, String gender, double height, double weight, int id, String specialization, int experienceYears) {
         super(name, age, gender, height, weight, id);
-
+        count++;
+        if (count > 100)
+            throw new RuntimeException("More than 100 trainers are not supported");
         if (Utility.isNullOrWhiteSpace(specialization))
             throw new IllegalArgumentException();
         if (experienceYears < 0 || experienceYears > 100)
