@@ -98,7 +98,6 @@ public class Main {
                     String targetMuscleGroup = ".";
                     double caloriesBurnedPerMinute = 0;
                     ArrayList<Exercise> exercises = new ArrayList<> ();
-
                     Exercise exercise = new Exercise(exerciseName, targetMuscleGroup, caloriesBurnedPerMinute);
                     Workout workout = new Workout (exerciseName,targetMuscleGroup,caloriesBurnedPerMinute,exercises);
                     workout.startWorkout();
