@@ -1,23 +1,48 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8«€ç«Û2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûíÀ›8ƒ‹¥«Ü2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦÷¥ý8ƒ‹¥«Ü2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é×Ä 8„‹¥«Ü2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8‡‹¥«Ü2
+D
+java:S2189Q""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ8À‹¥«Ü2
+W
+java:S1854":Remove this useless assignment to local variable "Olivia".(é×Ä 8Æ‹¥«Ü2
 X
-java:S1854#"<Remove this useless assignment to local variable "customer".(±Ê‰8±€ç«Û2
-L	java:S106"+Replace this use of System.out by a logger.(Å¯Ÿýÿÿÿÿ8·€ç«Û2
-G	java:S106"+Replace this use of System.out by a logger.(áË¥ú8ÙÍè«Û2
-L	java:S106"+Replace this use of System.out by a logger.(ë÷‹Ûÿÿÿÿÿ8œÙé«Û2
-G	java:S106"+Replace this use of System.out by a logger.(°â³Ñ8½Ãê«Û2
-L	java:S106"+Replace this use of System.out by a logger.(¦¨Ô¼ûÿÿÿÿ8¾Ãê«Û2
-L	java:S106"+Replace this use of System.out by a logger.(«Óæ„úÿÿÿÿ8¾Ãê«Û2
-L	java:S106"+Replace this use of System.out by a logger.(Þö…©ÿÿÿÿÿ8¿Ãê«Û2
-F	java:S106"+Replace this use of System.out by a logger.(…—ì48¿Ãê«Û2
-G	java:S106"+Replace this use of System.out by a logger.(ÇÍÜ»8¿Ãê«Û2
-E
-java:S2140#")Use "java.util.Random.nextInt()" instead.(±Ê‰8¾€ç«Û2
+java:S1854";Remove this useless assignment to local variable "Melissa".(¦÷¥ý8Æ‹¥«Ü2
+U
+java:S1854"8Remove this useless assignment to local variable "Marc".(ûíÀ›8Ç‹¥«Ü2
+Y
+java:S1854e"<Remove this useless assignment to local variable "exercise".(—ŒÚ¯8Ç‹¥«Ü2
+F
+java:S1481")Remove this unused "Marc" local variable.(ûíÀ›8Ë‹¥«Ü2
 I
-java:S1481#"-Remove this unused "customer" local variable.(±Ê‰8¾€ç«Û2
-P
-java:S1128"3Remove this unused import 'tracker.CalorieTracker'.(±ÄÙ›8î¦‚¬Û2
+java:S1481",Remove this unused "Melissa" local variable.(¦÷¥ý8Ì‹¥«Ü2
+H
+java:S1481"+Remove this unused "Olivia" local variable.(é×Ä 8Í‹¥«Ü2
+L	java:S106"+Replace this use of System.out by a logger.(Å¯Ÿýÿÿÿÿ8Î‹¥«Ü2
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(àÑÉâúÿÿÿÿ8Ø‹¥«Ü2
+L	java:S106"+Replace this use of System.out by a logger.(Û®ÕÓüÿÿÿÿ8Ù‹¥«Ü2
+G	java:S106"+Replace this use of System.out by a logger.(áË¥ú8Ú‹¥«Ü2
+L	java:S106 "+Replace this use of System.out by a logger.(ë÷‹Ûÿÿÿÿÿ8Ú‹¥«Ü2
+G	java:S106!"+Replace this use of System.out by a logger.(°â³Ñ8Û‹¥«Ü2
+L	java:S106""+Replace this use of System.out by a logger.(¦¨Ô¼ûÿÿÿÿ8Ü‹¥«Ü2
+L	java:S106#"+Replace this use of System.out by a logger.(«Óæ„úÿÿÿÿ8Ý‹¥«Ü2
+L	java:S106$"+Replace this use of System.out by a logger.(Þö…©ÿÿÿÿÿ8Ý‹¥«Ü2
+G	java:S106%"+Replace this use of System.out by a logger.(ÇÍÜ»8Þ‹¥«Ü2
+G	java:S106&"+Replace this use of System.out by a logger.(«”­8Þ‹¥«Ü2
+L	java:S1060"+Replace this use of System.out by a logger.(ýŽø­úÿÿÿÿ8à‹¥«Ü2
+L	java:S106>"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8å‹¥«Ü2
+L	java:S106@"+Replace this use of System.out by a logger.(÷à™Ÿÿÿÿÿÿ8è‹¥«Ü2
+X	java:S125C"<This block of commented-out lines of code should be removed.(äŒÁÕ8é‹¥«Ü2
+L	java:S106R"+Replace this use of System.out by a logger.(ŽÚ•¾þÿÿÿÿ8ò‹¥«Ü2
+L	java:S106["+Replace this use of System.out by a logger.(å‚š—þÿÿÿÿ8ø‹¥«Ü2
+J
+java:S1481e"-Remove this unused "exercise" local variable.(—ŒÚ¯8ü‹¥«Ü2
+G	java:S106k"+Replace this use of System.out by a logger.(»¶±Õ8þ‹¥«Ü2
+I
+java:S1128"'Remove this unused import 'interfaces'.(®¡Ú‚ÿÿÿÿÿ8ÿ‹¥«Ü2
 ?
-java:S1128""Remove this unused import 'utils'.(ë½ïÖ8î¦‚¬Û2
+java:S1128""Remove this unused import 'utils'.(ë½ïÖ8ÿ‹¥«Ü2
 C
-java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8î¦‚¬Û2
+java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8ÿ‹¥«Ü2

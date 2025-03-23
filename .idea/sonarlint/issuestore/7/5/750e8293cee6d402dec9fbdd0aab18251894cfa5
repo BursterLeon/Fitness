@@ -1,3 +1,7 @@
 
-O
-java:S5993"9Change the visibility of this constructor to "protected".(תשון
+t
+java:S1450"RRemove the "bmi" field and declare it as a local variable in the relevant methods.(׳ֹ€¥ÿÿÿÿÿ8ְûץ¨Ü2
+s
+java:S1450"VRemove the "dayLoss" field and declare it as a local variable in the relevant methods.(¼׃Ûׂ8ֱûץ¨Ü2
+V
+java:S5993D"9Change the visibility of this constructor to "protected".(תשון8ֲûץ¨Ü2

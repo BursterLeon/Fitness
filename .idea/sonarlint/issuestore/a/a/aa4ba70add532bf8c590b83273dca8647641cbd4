@@ -1,15 +1,17 @@
 
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡úÿÿÿÿ
-t
-java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡úÿÿÿÿ
-o
-java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(°Ö­ø
-—
-java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö·¾ÿ
-–
-java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Á„û4
-œ
-java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ù¬š€ÿÿÿÿÿ
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¸¼ÆÊ8¾ùõ¨Ü2
+b	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(¸¼ÆÊ8¿ùõ¨Ü2
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡úÿÿÿÿ8Ãùõ¨Ü2
+{
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(‡úÿÿÿÿ8Äùõ¨Ü2
+v
+java:S2293/"YReplace the type specification in this constructor call with the diamond operator ("<>").(°Ö­ø8Äùõ¨Ü2
+
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Á„û48õùõ¨Ü2
+£
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ù¬š€ÿÿÿÿÿ8öùõ¨Ü2
+]	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(¶×ºï8üùõ¨Ü2
+]	java:S107""AConstructor has 8 parameters, which is greater than 7 authorized.(”ÏÜ8üùõ¨Ü2
 F
 java:S1068"0Remove this unused "customerList" private field.(Ä‰«

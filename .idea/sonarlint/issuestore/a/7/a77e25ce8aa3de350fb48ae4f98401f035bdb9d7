@@ -1,9 +1,10 @@
 
-`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(›¤²÷ùÿÿÿÿ
-`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(öÎŒøÿÿÿÿ
-[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‹ï¸¢
-`	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(›¤²÷ùÿÿÿÿ
-b	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(Ğ·íùÿÿÿÿÿ8¿Äƒ¨Û2
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(À¯Í¥8Êúõ¨Ü2
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(†›ªÕùÿÿÿÿ8Êúõ¨Ü2
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(öÎŒøÿÿÿÿ8Ëúõ¨Ü2
+b	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(‹ï¸¢8Ìúõ¨Ü2
+g	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(›¤²÷ùÿÿÿÿ8Íúõ¨Ü2
+b	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(Ğ·íùÿÿÿÿÿ8ûúõ¨Ü2
 o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ëŠ ™
 o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ëŠ ™
 o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ëŠ ™

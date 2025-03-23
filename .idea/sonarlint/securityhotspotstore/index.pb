@@ -33,3 +33,9 @@ W
 'src/exceptions/WrongInputException.java,d/8/d800099294adcefafd7e3803b9f33921093faad7
 ;
 Fitness.iml,7/1/71133af1e7012196a4cbd83248022993031b7fb6
+H
+src/tracker/Workout.java,e/2/e25961085da3eb3b1da1d614ccb1c30523e7e8bf
+T
+$src/unitTests/unitTestCustCount.java,5/4/548f942c8fa4ac0ebcbc945f2b5daa8f649ebbbf
+Q
+!src/mainPackage/InputHandler.java,c/0/c0291db23a64e350f668a504b03a902469b7879b

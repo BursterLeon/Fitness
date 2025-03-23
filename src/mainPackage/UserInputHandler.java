@@ -202,7 +202,7 @@ public class UserInputHandler {
     public Customer.Goal getGoal() {
         while (true) {
             try {
-                System.out.println("What's your goal? \n 1.Lose Weight \n 2.Gain Muscle \n 3.Maintain Fitness");
+                System.out.println("What's your goal? \n 1. Type '1' to Lose Weight \n 2. Type '2' to Gain Muscle \n 3. Type '3' to Maintain Fitness");
                 String goalInput = scanner.nextLine().trim();
                 if (Utility.isNullOrWhiteSpace(goalInput)) {
                     throw new NullWhiteSpaceException("The goal cannot be blank");
