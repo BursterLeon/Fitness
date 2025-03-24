@@ -168,9 +168,9 @@ public class UserInputHandler {
     public double getWeight() {
         while (true) {
             try {
-                System.out.print("Please enter your weight in KG (eg. 143.4 ) : ");
+                System.out.print("Please enter your weight in Pound (eg. 143.4 ) : ");
                 double weight = getValidDouble();
-                if (weight < 0 || weight > 150 ) {
+                if (weight < 0 || weight > 300 ) {
                     throw new Exception("Invalid input!! ");
                 }
                 return weight;

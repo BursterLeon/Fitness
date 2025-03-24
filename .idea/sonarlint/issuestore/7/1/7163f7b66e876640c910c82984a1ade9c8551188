@@ -18,7 +18,7 @@ G	java:S106a"+Replace this use of System.out by a logger.(µ¢ï…8˜•µ«Ü2
 M	java:S106"+Replace this use of System.out by a logger.(¶ç…ùÿÿÿÿ8•µ«Ü2
 M	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Ÿ•µ«Ü2
 M	java:S106 "+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8¡•µ«Ü2
-H	java:S106«"+Replace this use of System.out by a logger.(¶Ø¥8£•µ«Ü2
+H	java:S106«"+Replace this use of System.out by a logger.(ÌüÖ8£•µ«Ü2
 M	java:S106³"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8¤•µ«Ü2
 p	java:S100¸"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Àì–ùÿÿÿÿ8¥•µ«Ü2
 H	java:S106»"+Replace this use of System.out by a logger.(ÎÖÒä8¦•µ«Ü2

@@ -105,11 +105,11 @@ public class Main {
 
                 case "3":
                     System.out.println("Exiting calorie tracker...");
-                    scanner.close();
-                    break;
+
+                    return;
 
                 default:
-
+                    System.out.println("Please try again!");
             }
 
         }

@@ -38,3 +38,10 @@ L	java:S106["+Replace this use of System.out by a logger.(å‚š—şÿÿÿÿ8ÛÅ«Ü2
 J
 java:S1481e"-Remove this unused "exercise" local variable.(—ŒÚ¯8ƒÛÅ«Ü2
 G	java:S106k"+Replace this use of System.out by a logger.(»¶±Õ8„ÛÅ«Ü2
+G	java:S106p"+Replace this use of System.out by a logger.(Íñõ8‹ºö­Ü2
+I
+java:S1128"'Remove this unused import 'interfaces'.(®¡Ú‚ÿÿÿÿÿ8ºÃõ­Ü2
+?
+java:S1128""Remove this unused import 'utils'.(ë½ïÖ8ºÃõ­Ü2
+C
+java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8ºÃõ­Ü2
