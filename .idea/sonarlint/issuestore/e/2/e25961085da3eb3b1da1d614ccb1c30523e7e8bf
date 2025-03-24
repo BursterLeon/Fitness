@@ -1,0 +1,87 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(Ç–ç•ûÿÿÿÿ8Òƒµ«Ü2
+ƒ
+java:S1192l"aDefine a constant instead of duplicating this literal "-------------------------------" 18 times.(ç‘ë®üÿÿÿÿ8Ôƒµ«Ü2
+
+java:S1192º"lDefine a constant instead of duplicating this literal "There are no exercises in your workout yet." 3 times.(ë°ƒ–úÿÿÿÿ8Ôƒµ«Ü2
+†
+java:S1319"iThe type of "exercises" should be an interface such as "List" rather than the implementation "ArrayList".(é˜ÅË8äƒµ«Ü2
+’
+java:S1319+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¾ğ­şÿÿÿÿ8äƒµ«Ü2
+\
+java:S1161":Add the "@Override" annotation above this method signature(ú›Šøøÿÿÿÿ8Ğ‰µ«Ü2
+\
+java:S1161!":Add the "@Override" annotation above this method signature(Óßíôÿÿÿÿÿ8Ò‰µ«Ü2
+t
+java:S37763"RRefactor this method to reduce its Cognitive Complexity from 87 to the 15 allowed.(Ş…¥÷ûÿÿÿÿ8ã‰µ«Ü2
+L	java:S106O"+Replace this use of System.out by a logger.(öÌÆ´ıÿÿÿÿ8³Šµ«Ü2
+L	java:S106P"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8´Šµ«Ü2
+D
+java:S1125R"'Remove the unnecessary boolean literal.(Œğ­÷8µŠµ«Ü2
+h
+java:S2147–"ECombine this catch with the one at line 276, which has the same body.(ˆÄ‰Êúÿÿÿÿ8ºŠµ«Ü2
+c
+java:S2147˜"ECombine this catch with the one at line 278, which has the same body.(”ı¾8ºŠµ«Ü2
+L	java:S106V"+Replace this use of System.out by a logger.(ñ•”ïùÿÿÿÿ8¼Šµ«Ü2
+G	java:S106W"+Replace this use of System.out by a logger.(¥€ö8¼Šµ«Ü2
+G	java:S106X"+Replace this use of System.out by a logger.(Æ£Åú8½Šµ«Ü2
+G	java:S106Y"+Replace this use of System.out by a logger.(ß¢·Ô8¾Šµ«Ü2
+L	java:S106Z"+Replace this use of System.out by a logger.(¤Ñ›³ıÿÿÿÿ8¿Šµ«Ü2
+L	java:S106["+Replace this use of System.out by a logger.(Í·²Øùÿÿÿÿ8ÀŠµ«Ü2
+G	java:S106\"+Replace this use of System.out by a logger.(¨õİÀ8ÀŠµ«Ü2
+L	java:S106]"+Replace this use of System.out by a logger.(ïÂãÎùÿÿÿÿ8ÁŠµ«Ü2
+L	java:S106l"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÅŠµ«Ü2
+L	java:S106m"+Replace this use of System.out by a logger.(¾Æô¼şÿÿÿÿ8ÆŠµ«Ü2
+F	java:S106o"+Replace this use of System.out by a logger.(­ºí8ÊŠµ«Ü2
+L	java:S106q"+Replace this use of System.out by a logger.(èÀÃµøÿÿÿÿ8ËŠµ«Ü2
+L	java:S106r"+Replace this use of System.out by a logger.(ÕïÉÍıÿÿÿÿ8ËŠµ«Ü2
+M	java:S106ƒ"+Replace this use of System.out by a logger.(Îóñÿÿÿÿÿ8ÏŠµ«Ü2
+M	java:S106„"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ĞŠµ«Ü2
+H	java:S106†"+Replace this use of System.out by a logger.(À…Ê³8ÑŠµ«Ü2
+M	java:S106‡"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÑŠµ«Ü2
+M	java:S106Š"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÒŠµ«Ü2
+M	java:S106‘"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÓŠµ«Ü2
+H	java:S106’"+Replace this use of System.out by a logger.(ĞÆÚÌ8ÓŠµ«Ü2
+H	java:S106”"+Replace this use of System.out by a logger.(Úà·ê8ÔŠµ«Ü2
+M	java:S106–"+Replace this use of System.out by a logger.(šŠˆÇşÿÿÿÿ8ÕŠµ«Ü2
+M	java:S106—"+Replace this use of System.out by a logger.(ÕïÉÍıÿÿÿÿ8ÕŠµ«Ü2
+M	java:S106«"+Replace this use of System.out by a logger.(Îóñÿÿÿÿÿ8ØŠµ«Ü2
+M	java:S106¬"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ØŠµ«Ü2
+H	java:S106®"+Replace this use of System.out by a logger.(À…Ê³8ÙŠµ«Ü2
+M	java:S106¯"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÙŠµ«Ü2
+M	java:S106²"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÙŠµ«Ü2
+G	java:S106µ"+Replace this use of System.out by a logger.(åÊ“38ÚŠµ«Ü2
+M	java:S106º"+Replace this use of System.out by a logger.(ë°ƒ–úÿÿÿÿ8ÚŠµ«Ü2
+M	java:S106»"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÚŠµ«Ü2
+H	java:S106½"+Replace this use of System.out by a logger.(œò‚ß8ÛŠµ«Ü2
+H	java:S106¿"+Replace this use of System.out by a logger.(ß»Ô 8ÛŠµ«Ü2
+M	java:S106Á"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ÜŠµ«Ü2
+M	java:S106Æ"+Replace this use of System.out by a logger.(ë°ƒ–úÿÿÿÿ8ÜŠµ«Ü2
+M	java:S106Ç"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8İŠµ«Ü2
+H	java:S106É"+Replace this use of System.out by a logger.(·‡Çï8İŠµ«Ü2
+H	java:S106Ë"+Replace this use of System.out by a logger.(ß»Ô 8İŠµ«Ü2
+G	java:S106Ï"+Replace this use of System.out by a logger.(ÈûG8ŞŠµ«Ü2
+H	java:S106ß"+Replace this use of System.out by a logger.( ¿ëÑ8àŠµ«Ü2
+M	java:S106à"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8áŠµ«Ü2
+M	java:S106â"+Replace this use of System.out by a logger.(ÙøÍ¯ûÿÿÿÿ8âŠµ«Ü2
+M	java:S106ã"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8ãŠµ«Ü2
+M	java:S106é"+Replace this use of System.out by a logger.(ë°ƒ–úÿÿÿÿ8äŠµ«Ü2
+M	java:S106ê"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8äŠµ«Ü2
+M	java:S106ì"+Replace this use of System.out by a logger.(û¨ƒâşÿÿÿÿ8äŠµ«Ü2
+H	java:S106"+Replace this use of System.out by a logger.(Ùª×8çŠµ«Ü2
+M	java:S106‚"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8çŠµ«Ü2
+M	java:S106ˆ"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8èŠµ«Ü2
+M	java:S106‰"+Replace this use of System.out by a logger.(ÆÍúÿÿÿÿ8èŠµ«Ü2
+M	java:S106Š"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8èŠµ«Ü2
+M	java:S106"+Replace this use of System.out by a logger.(ÊôÍíşÿÿÿÿ8éŠµ«Ü2
+M	java:S106"+Replace this use of System.out by a logger.(ç‘ë®üÿÿÿÿ8êŠµ«Ü2
+M	java:S106•"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8êŠµ«Ü2
+M	java:S106—"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ëŠµ«Ü2
+M	java:S106™"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ëŠµ«Ü2
+^	java:S125³"<This block of commented-out lines of code should be removed.(è›éşÿÿÿÿ8ïŠµ«Ü2
+Y	java:S125¹"<This block of commented-out lines of code should be removed.(ûíŞş8ïŠµ«Ü2
+?
+java:S1128""Remove this unused import 'utils'.(ë½ïÖ8ğŠµ«Ü2
+é
+java:S65413"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 178 to 64, Complexity from 31 to 14, Nesting Level from 6 to 2, Number of Variables from 22 to 6.(Ş…¥÷ûÿÿÿÿ8­•µ«Ü2

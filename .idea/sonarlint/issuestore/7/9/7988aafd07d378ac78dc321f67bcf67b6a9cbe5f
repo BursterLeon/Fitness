@@ -1,48 +1,48 @@
 
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûíÀ›8ƒ‹¥«Ü2
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦÷¥ı8ƒ‹¥«Ü2
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é×Ä 8„‹¥«Ü2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûíÀ›8´û´«Ü2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦÷¥ı8´û´«Ü2
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é×Ä 8´û´«Ü2
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8‡‹¥«Ü2
 D
-java:S2189Q""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8À‹¥«Ü2
+java:S2189Q""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8éÚÅ«Ü2
 W
-java:S1854":Remove this useless assignment to local variable "Olivia".(é×Ä 8Æ‹¥«Ü2
+java:S1854":Remove this useless assignment to local variable "Olivia".(é×Ä 8ı´«Ü2
 X
-java:S1854";Remove this useless assignment to local variable "Melissa".(¦÷¥ı8Æ‹¥«Ü2
+java:S1854";Remove this useless assignment to local variable "Melissa".(¦÷¥ı8ƒı´«Ü2
 U
-java:S1854"8Remove this useless assignment to local variable "Marc".(ûíÀ›8Ç‹¥«Ü2
+java:S1854"8Remove this useless assignment to local variable "Marc".(ûíÀ›8„ı´«Ü2
 Y
-java:S1854e"<Remove this useless assignment to local variable "exercise".(—ŒÚ¯8Ç‹¥«Ü2
+java:S1854e"<Remove this useless assignment to local variable "exercise".(—ŒÚ¯8îÚÅ«Ü2
 F
-java:S1481")Remove this unused "Marc" local variable.(ûíÀ›8Ë‹¥«Ü2
+java:S1481")Remove this unused "Marc" local variable.(ûíÀ›8’ı´«Ü2
 I
-java:S1481",Remove this unused "Melissa" local variable.(¦÷¥ı8Ì‹¥«Ü2
+java:S1481",Remove this unused "Melissa" local variable.(¦÷¥ı8–ı´«Ü2
 H
-java:S1481"+Remove this unused "Olivia" local variable.(é×Ä 8Í‹¥«Ü2
-L	java:S106"+Replace this use of System.out by a logger.(Å¯Ÿıÿÿÿÿ8Î‹¥«Ü2
+java:S1481"+Remove this unused "Olivia" local variable.(é×Ä 8˜ı´«Ü2
+L	java:S106"+Replace this use of System.out by a logger.(Å¯Ÿıÿÿÿÿ8šı´«Ü2
 K
-java:S2140")Use "java.util.Random.nextInt()" instead.(àÑÉâúÿÿÿÿ8Ø‹¥«Ü2
-L	java:S106"+Replace this use of System.out by a logger.(Û®ÕÓüÿÿÿÿ8Ù‹¥«Ü2
-G	java:S106"+Replace this use of System.out by a logger.(áË¥ú8Ú‹¥«Ü2
-L	java:S106 "+Replace this use of System.out by a logger.(ë÷‹Ûÿÿÿÿÿ8Ú‹¥«Ü2
-G	java:S106!"+Replace this use of System.out by a logger.(°â³Ñ8Û‹¥«Ü2
-L	java:S106""+Replace this use of System.out by a logger.(¦¨Ô¼ûÿÿÿÿ8Ü‹¥«Ü2
-L	java:S106#"+Replace this use of System.out by a logger.(«Óæ„úÿÿÿÿ8İ‹¥«Ü2
-L	java:S106$"+Replace this use of System.out by a logger.(Şö…©ÿÿÿÿÿ8İ‹¥«Ü2
-G	java:S106%"+Replace this use of System.out by a logger.(ÇÍÜ»8Ş‹¥«Ü2
-G	java:S106&"+Replace this use of System.out by a logger.(«”­8Ş‹¥«Ü2
-L	java:S1060"+Replace this use of System.out by a logger.(ıø­úÿÿÿÿ8à‹¥«Ü2
-L	java:S106>"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8å‹¥«Ü2
-L	java:S106@"+Replace this use of System.out by a logger.(÷à™Ÿÿÿÿÿÿ8è‹¥«Ü2
-X	java:S125C"<This block of commented-out lines of code should be removed.(äŒÁÕ8é‹¥«Ü2
-L	java:S106R"+Replace this use of System.out by a logger.(Ú•¾şÿÿÿÿ8ò‹¥«Ü2
-L	java:S106["+Replace this use of System.out by a logger.(å‚š—şÿÿÿÿ8ø‹¥«Ü2
+java:S2140")Use "java.util.Random.nextInt()" instead.(àÑÉâúÿÿÿÿ8Óı´«Ü2
+L	java:S106"+Replace this use of System.out by a logger.(Û®ÕÓüÿÿÿÿ8Öı´«Ü2
+G	java:S106"+Replace this use of System.out by a logger.(áË¥ú8×ı´«Ü2
+L	java:S106 "+Replace this use of System.out by a logger.(ë÷‹Ûÿÿÿÿÿ8Øı´«Ü2
+G	java:S106!"+Replace this use of System.out by a logger.(°â³Ñ8Ùı´«Ü2
+L	java:S106""+Replace this use of System.out by a logger.(¦¨Ô¼ûÿÿÿÿ8Ûı´«Ü2
+L	java:S106#"+Replace this use of System.out by a logger.(«Óæ„úÿÿÿÿ8Üı´«Ü2
+L	java:S106$"+Replace this use of System.out by a logger.(Şö…©ÿÿÿÿÿ8Üı´«Ü2
+G	java:S106%"+Replace this use of System.out by a logger.(ÇÍÜ»8İı´«Ü2
+G	java:S106&"+Replace this use of System.out by a logger.(«”­8Şı´«Ü2
+L	java:S1060"+Replace this use of System.out by a logger.(ıø­úÿÿÿÿ8áı´«Ü2
+L	java:S106>"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8äı´«Ü2
+L	java:S106@"+Replace this use of System.out by a logger.(÷à™Ÿÿÿÿÿÿ8åı´«Ü2
+X	java:S125C"<This block of commented-out lines of code should be removed.(äŒÁÕ8æı´«Ü2
+L	java:S106R"+Replace this use of System.out by a logger.(Ú•¾şÿÿÿÿ8ÿÚÅ«Ü2
+L	java:S106["+Replace this use of System.out by a logger.(å‚š—şÿÿÿÿ8ÛÅ«Ü2
 J
-java:S1481e"-Remove this unused "exercise" local variable.(—ŒÚ¯8ü‹¥«Ü2
-G	java:S106k"+Replace this use of System.out by a logger.(»¶±Õ8ş‹¥«Ü2
+java:S1481e"-Remove this unused "exercise" local variable.(—ŒÚ¯8ƒÛÅ«Ü2
+G	java:S106k"+Replace this use of System.out by a logger.(»¶±Õ8„ÛÅ«Ü2
 I
-java:S1128"'Remove this unused import 'interfaces'.(®¡Ú‚ÿÿÿÿÿ8ÿ‹¥«Ü2
+java:S1128"'Remove this unused import 'interfaces'.(®¡Ú‚ÿÿÿÿÿ8ñı´«Ü2
 ?
-java:S1128""Remove this unused import 'utils'.(ë½ïÖ8ÿ‹¥«Ü2
+java:S1128""Remove this unused import 'utils'.(ë½ïÖ8ñı´«Ü2
 C
-java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8ÿ‹¥«Ü2
+java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8ñı´«Ü2
