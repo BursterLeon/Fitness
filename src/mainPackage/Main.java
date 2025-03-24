@@ -55,6 +55,12 @@ public class Main {
 
 
         }
+// Gain Muscle
+        if (goal ==Customer.Goal.gainMuscles){
+            System.out.println("To Gain Muscle Is really inpotant to make sure you not get hurn we suggest Mellisa ?");
+
+        }
+
 
         Customer m = new Customer(name, age, gender, height, weight, id, goal, activityLevel);
         if (goal ==Customer.Goal.looseWeight){
