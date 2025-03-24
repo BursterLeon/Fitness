@@ -61,7 +61,11 @@ public class Main {
             m.setWeightLoss(weightGoal);
             System.out.println ("=======================");
 
-            System.out.println("To reach your goal you have to burn about** " + m.getDayLoss()+ " Calories ** per week");
+            System.out.println("To reach your goal you have to burn about ** " + m.getDayLoss()+ " Calories ** per week");
+        } else if ( goal == Customer.Goal.gainMuscles){
+            System.out.println(FitnessPlan.GetMuscle(weight, activityLevel));
+        }else if (goal == Customer.Goal.stayHealthy){
+            System.out.println(FitnessPlan.GetFitness(weight, activityLevel));
         }
 
         // int caloriesRecommend=;

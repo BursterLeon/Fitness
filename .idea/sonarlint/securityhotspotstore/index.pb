@@ -39,3 +39,5 @@ T
 $src/unitTests/unitTestCustCount.java,5/4/548f942c8fa4ac0ebcbc945f2b5daa8f649ebbbf
 Q
 !src/mainPackage/InputHandler.java,c/0/c0291db23a64e350f668a504b03a902469b7879b
+P
+ src/mainPackage/FitnessPlan.java,8/a/8a67668935ba7a0b24d161c9b8bb5e1d4171432a
