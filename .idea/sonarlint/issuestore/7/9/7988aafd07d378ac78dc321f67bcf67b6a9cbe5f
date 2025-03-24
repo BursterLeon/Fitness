@@ -3,8 +3,6 @@ m	java:S117"QRename this local variable to match the regular expression '^[a-
 m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦÷¥ı8´û´«Ü2
 m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é×Ä 8´û´«Ü2
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆßÉƒüÿÿÿÿ8‡‹¥«Ü2
-D
-java:S2189Q""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8éÚÅ«Ü2
 W
 java:S1854":Remove this useless assignment to local variable "Olivia".(é×Ä 8ı´«Ü2
 X
@@ -40,9 +38,3 @@ L	java:S106["+Replace this use of System.out by a logger.(å‚š—şÿÿÿÿ8ÛÅ«Ü2
 J
 java:S1481e"-Remove this unused "exercise" local variable.(—ŒÚ¯8ƒÛÅ«Ü2
 G	java:S106k"+Replace this use of System.out by a logger.(»¶±Õ8„ÛÅ«Ü2
-I
-java:S1128"'Remove this unused import 'interfaces'.(®¡Ú‚ÿÿÿÿÿ8ñı´«Ü2
-?
-java:S1128""Remove this unused import 'utils'.(ë½ïÖ8ñı´«Ü2
-C
-java:S1128"'Remove this unused import 'exceptions'.(¢¡ö8ñı´«Ü2
