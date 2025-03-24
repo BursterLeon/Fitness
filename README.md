@@ -130,5 +130,5 @@ You can exit the app at any time by selecting the "Exit" option in the main menu
 - Redesigned the **Exercise** class and integrated it with the **Workout** class, and implemented the **interfaces** (Trackable, Calculable).
 
 **Mohd Ifranul Hoque:**
-- Improved the **core functionality** and **handled user input** in the main package (UserInputHandler, CaloriesInputHandler).
+- Improved the **core functionality** and **handled user input** in the main package (UserInputHandler, CaloriesInputHandler, fitnessPlan). 
 
