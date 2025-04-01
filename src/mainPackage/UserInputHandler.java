@@ -18,7 +18,7 @@ public class UserInputHandler {
     public String getName() {
         while (true) {
             try {
-                System.out.print("Enter your Name: ");
+                System.out.println("Enter your Name: ");
                 String name = scanner.nextLine().trim();
 
                 // Checking if the input for the name is left blank
@@ -49,7 +49,7 @@ public class UserInputHandler {
     public int getAge() {
         while (true) {
             try {
-                System.out.print("Enter your age: ");
+                System.out.println("Enter your age: ");
                 int age = getValidInt();
                 scanner.nextLine();
 
@@ -72,7 +72,7 @@ public class UserInputHandler {
     public String getGender() {
         while (true) {
             try {
-                System.out.print("Enter your Gender (Male/Female): ");
+                System.out.println("Enter your Gender (Male/Female): ");
                 String gender = scanner.nextLine().trim();
 
 
@@ -91,52 +91,58 @@ public class UserInputHandler {
     }
 
     // Handling the users input for Height
-    public double getHeight() {
+    public double getHeight(boolean metricSystem) {
         while (true) {
             try {
-                System.out.print("Enter your Height (e.g., '175 cm' or '4.9 ft'): ");
-                String height = scanner.nextLine().trim().toLowerCase();
-
+            	if (metricSystem) {
+            		System.out.println("Enter your height in meters. (e.g. 1.7 = 1.7 meters)");
+            		  
+            	} else {
+            		System.out.println("Enter your height in feet. (e.g. 5.6 = 5.6 ft)");
+            	}
+            	
+            	String height = scanner.nextLine().trim().toLowerCase();
+            	
+                /**  Old code I am replacing
                 // Checking if the height is in Centimeters
                 if (height.endsWith("cm")) {
                     // converting the string to integer and removing the "cm" string at the end
                     String heightStr = height.replace("cm", "").trim();
-
+                    
+                    
                     // Using regex to ensure only integers are accepted
-                    if (!heightStr.matches("\\d+")) {
+                    if (!height.matches("\\d+")) {
                         throw new NumberFormatException("Invalid format, please try again");
                     }
+                    */
 
-                    int heightCM = Integer.parseInt(heightStr);
-                    if (heightCM < 50 || heightCM > 300) {
-                        throw new IllegalArgumentException("Quit messing around and enter a valid height!");
+                    
+                    
+                    // Using regex to ensure only double or whole number are accepted
+                    if (!height.matches("\\d+(\\.\\d+)?")) {
+                        throw new NumberFormatException("Invalid format, please try again");
+                    }
+                    
+                    if(metricSystem) {
+                    	double heightCM = Double.parseDouble(height) * 100;
+                    	if (heightCM < 50 || heightCM > 300) {
+                    		throw new IllegalArgumentException("Quit messing around and enter a valid height!");
+                    	}
+                    }  else {
+                    	double heightFT = Double.parseDouble(height);
+                        if (heightFT < 2.0 || heightFT > 8.0) {
+                            throw new IllegalArgumentException("Quit messing around and enter a valid height!");
+                        }
                     }
 
-                    return heightCM; // return as integer in centimeters
-                }
-
+                    return Double.parseDouble(height);
+                
+                /** Previous code I am replaceing.
                 // If the user inputs a double value in feet
                 else if (height.endsWith("ft")) {
                     String heightStr = height.replace("ft", "").trim();
-
-                    // Using regex to ensure only double or whole number are accepted
-                    if (!heightStr.matches("\\d+(\\.\\d+)?")) {
-                        throw new NumberFormatException("Invalid format, please try again");
-                    }
-
-                    double heightFT = Double.parseDouble(heightStr);
-                    if (heightFT < 2.0 || heightFT > 8.0) {
-                        throw new IllegalArgumentException("Quit messing around and enter a valid height!");
-                    }
-
-                    // Converting the height to Centimeters
-                    return heightFT * 30.48; // return as double in centimeters
-                }
-
-                // For invalid input
-                else {
-                    throw new IllegalArgumentException("Invalid format! Use '175 cm' or '4.9 ft'");
-                }
+				*/
+              
             } catch (NumberFormatException e) {
                 System.out.println("Invalid format. Please enter a valid height.");
             } catch (IllegalArgumentException e) {
@@ -165,10 +171,15 @@ public class UserInputHandler {
         }
     }
 
-    public double getWeight() {
+    public double getWeight(boolean metricSystem) {
         while (true) {
             try {
-                System.out.print("Please enter your weight in Pound (eg. 143.4 ) : ");
+            	if(metricSystem) {
+            		System.out.println("Please enter your weight in kilos (eg. 64.7 = 64.7 kgs)");
+            	} else {
+            		System.out.println("Please enter your weight in pounds (eg. 167.4 = 167.4 lbs)");
+            	}
+                
                 double weight = getValidDouble();
                 if (weight < 0 || weight > 300 ) {
                     throw new Exception("Invalid input!! ");
@@ -184,7 +195,7 @@ public class UserInputHandler {
     public int GetActivityLevel(){
         while(true){
             try{
-                System.out.print("Enter your Activity Level From (1-7): ");
+                System.out.println("Enter your Activity Level From (1-7): ");
                 int activityLevel = getValidInt();
                 if (activityLevel < 1 || activityLevel > 7 ){
                     throw new InvalidActivityLevelException("Invalid Activity Level. The activity Level should be between (1 -7) ");
@@ -224,6 +235,37 @@ public class UserInputHandler {
                 System.out.println(e.getMessage());
             }
         }
+    }
+    
+    
+    //new method to see if user wants to proceed in the metric system 
+    public boolean usesMetricSystem() {
+    	while(true) {
+    		try {
+    			System.out.println("Would you like to enter the system in the metric system (kilos & meters)? Or the imperial system (pounds and feet)? Enter 1: Metric, Enter 2: Imperial):");
+    			String input  = scanner.nextLine().trim();
+    		
+    			if (Utility.isNullOrWhiteSpace(input)) {
+    				throw new NullWhiteSpaceException("The goal cannot be blank");
+    			}
+    			
+    			if (Integer.parseInt(input) > 2 || Integer.parseInt(input) < 1) {
+    				throw new NumberFormatException();
+    			}
+    			if (Integer.parseInt(input) == 1) {
+    				System.out.println("Understood, values will be in the metric system.");
+    				return true;
+    			} else {
+    				System.out.println("Understood, values will be in the imperial system.");
+    				return false;
+    			}
+    			
+    		} catch (NullWhiteSpaceException e) {
+    			System.out.println(e.getMessage());
+    		} catch(NumberFormatException e) {
+    			System.out.println("Please enter integer values 1 or 2");
+    		}
+    	}
     }
 
     // Function for the Activity Level

@@ -21,24 +21,13 @@ public class Main {
 
         String name = userInputHandler.getName();
         int age = userInputHandler.getAge();
+        boolean usesMetricSystem = userInputHandler.usesMetricSystem();
         String gender = userInputHandler.getGender();
-        double height = userInputHandler.getHeight();
-        double weight = userInputHandler.getWeight();
+        double height = userInputHandler.getHeight(usesMetricSystem);
+        double weight = userInputHandler.getWeight(usesMetricSystem);
         int activityLevel = userInputHandler.GetActivityLevel();
         scanner.nextLine();
         int id = (int) (Math.random() * 1000);
-        System.out.println("======Create Account Sucess ====== ");
-        System.out.println("User Information: ");
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Gender: " + gender);
-        System.out.println("Height: " + height);
-        System.out.println("Weight: " + weight);
-        System.out.println("AcitivityLevel " + activityLevel);
-        System.out.println("================================= ");
-
-
-
 
         //Update to constructor of Customer
         Customer.Goal goal = userInputHandler.getGoal();
@@ -56,16 +45,33 @@ public class Main {
 
         }
 
-        Customer m = new Customer(name, age, gender, height, weight, id, goal, activityLevel);
+        Customer m = new Customer(name, age, gender, height, weight, id, goal, activityLevel, usesMetricSystem);
+        // Moved this block of code down
+        System.out.println("======Create Account Sucess ====== ");
+        System.out.println("User Information: ");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
+        if(usesMetricSystem) {
+        	 System.out.println("Height: " + height + " m");
+             System.out.println("Weight: " + weight + " kgs");
+        } else {
+        	 System.out.println("Height: " + height + " ft");
+             System.out.println("Weight: " + weight + " lbs");
+        }
+        System.out.println("AcitivityLevel: " + activityLevel);
+        System.out.printf("BMI: %.2f%n\n", m.getBmi());
+        System.out.println("================================= ");
+
         if (goal ==Customer.Goal.looseWeight){
             m.setWeightLoss(weightGoal);
             System.out.println ("=======================");
 
             System.out.println("To reach your goal you have to burn about ** " + m.getDayLoss()+ " Calories ** per week");
         } else if ( goal == Customer.Goal.gainMuscles){
-            System.out.println(FitnessPlan.GetMuscle(weight, activityLevel));
+            System.out.println(FitnessPlan.GetMuscle(weight, activityLevel, usesMetricSystem));
         }else if (goal == Customer.Goal.stayHealthy){
-            System.out.println(FitnessPlan.GetFitness(weight, activityLevel));
+            System.out.println(FitnessPlan.GetFitness(weight, activityLevel, usesMetricSystem));
         }
 
         // int caloriesRecommend=;
@@ -83,7 +89,7 @@ public class Main {
         CalorieTracker calorieTracker = new CalorieTracker(dailyCalorieGoal, 0, 0);
 
         while (true){
-            System.out.println("1.Track your Calories \n 2.Workout \n 3.Exits");
+            System.out.println("1.Track your Calories \n2.Workout \n3.Create a diet plan \n4.Exits");
             String goalInput = scanner.nextLine().trim();
             switch (goalInput) {
                 case "1":
@@ -107,11 +113,14 @@ public class Main {
                     workout.startWorkout();
                     break;
 
-                case "3":
+                case "4":
                     System.out.println("Exiting calorie tracker...");
 
                     return;
-
+                case "3": 
+                	Marc.createDietPlan(m);
+                	break;
+                
                 default:
                     System.out.println("Please try again!");
             }

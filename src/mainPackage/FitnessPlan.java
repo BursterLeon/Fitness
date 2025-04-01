@@ -2,7 +2,10 @@ package mainPackage;
 
 public class FitnessPlan {
 
-    public static String GetMuscle(double weight, int activityLevel){
+    public static String GetMuscle(double weight, int activityLevel, boolean metric){
+    	if (metric) {
+    		weight *= 2.2;
+    	}
         double protein = weight * 1.0;
         double carbs = weight * 1.5;
         double fats = weight * 0.4;
@@ -16,7 +19,10 @@ public class FitnessPlan {
                 " \n Fats: " + fats;
     }
 
-    public static String GetFitness(double weight, int activityLevel){
+    public static String GetFitness(double weight, int activityLevel,boolean metric){
+    	if (metric) {
+    		weight *= 2.2;
+    	}
         double protein = weight * 0.8;
         double carbs = weight * 1.2;
         double fats = weight * 0.3;
