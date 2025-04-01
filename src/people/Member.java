@@ -11,6 +11,7 @@ public abstract class Member {
     private double bmi;
     private double weightLoss;
     private double dayLoss;
+    private boolean metricSystem;
 
     public String getName() {
         return name;
@@ -37,13 +38,29 @@ public abstract class Member {
     }
 
     public double getBmi() {
-
-        if (height != 0) {
-            bmi = weight / (height * height) * 1000;  // Calculate BMI
+    	double bmi = 0;
+    	if(height ==  0 || weight == 0) {
+    		System.out.println("Invalid height or weight. Please update your values and try again");
+    		return bmi;
+    	}
+    	
+        if (metricSystem) {          
+        	//Formula for BMI in Metric System = weight(kgs) / height^2(m)
+        	 bmi  = weight / Math.pow(height, 2);
         } else {
-            bmi = 0;
-        }
+        	//Formula for BMI in Imperial System = (weight(lbs) / height^2(in)) * 703
+        	 bmi  = (weight / Math.pow(height * 12, 2))* 703;
+        }			
         return bmi;
+    }
+    
+    public boolean getMetricSystem() {
+    	return metricSystem;
+    }
+    
+    // Setters & Getters for the new methods
+    public void setMetricSystem(boolean newStatus) {
+    	this.metricSystem = newStatus;
     }
 
     public double getWeightLoss() {
@@ -65,6 +82,18 @@ public abstract class Member {
 
 
 // Constructor
+    public Member (String name, int age, String gender, double height, double weight, int id,boolean usesMetricSystem) {
+        if (Utility.isNullOrWhiteSpace(name) || age < 0 || age > 100 || Utility.isNullOrWhiteSpace(gender) || height < 0|| weight < 0 || id < 0)
+            throw new IllegalArgumentException();
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.height = height;
+        this.weight = weight;
+        this.id = id;
+        this.metricSystem = usesMetricSystem; //Allows the user to decide to receive their data in the metric system.
+        }
+    
     public Member (String name, int age, String gender, double height, double weight, int id) {
         if (Utility.isNullOrWhiteSpace(name) || age < 0 || age > 100 || Utility.isNullOrWhiteSpace(gender) || height < 0|| weight < 0 || id < 0)
             throw new IllegalArgumentException();
@@ -74,7 +103,8 @@ public abstract class Member {
         this.height = height;
         this.weight = weight;
         this.id = id;
-    }
+        this.metricSystem = false; //Allows the user to decide to receive their data in the metric system.
+        }
     @Override
     public String toString() {
         return "Name: "+getName()+"Age: "+getAge()+"Gender: "+getGender()+"Height: "+getHeight()+"Weight: "+getWeight();
